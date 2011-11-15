@@ -8,12 +8,10 @@ import com.rixon.tsp.Algorithm;
 public class AlgorithmProvider {
 
 	public final static String ALL_PERMUTATIONS = "All Permutations";
-	public  final static String NEAREST_CITY_ONLY = "Neearest City Only";
-	
+	public  final static String NEAREST_CITY_ONLY = "Nearest City Only";
 	private static Map<String,Algorithm> algorithms = new HashMap<String, Algorithm>();
 	
 	public static Algorithm allPermutationAlgorithm() {
-		// TODO Auto-generated method stub
 		Algorithm allPermutations;
 		if (algorithms.containsKey(ALL_PERMUTATIONS)) {
 			allPermutations = algorithms.get(ALL_PERMUTATIONS);
@@ -26,7 +24,6 @@ public class AlgorithmProvider {
 	}
 	
 	public static Algorithm nearestCityOnly() {
-		// TODO Auto-generated method stub
 		Algorithm nearestCityOnly;
 		if (algorithms.containsKey(NEAREST_CITY_ONLY)) {
 			nearestCityOnly = algorithms.get(NEAREST_CITY_ONLY);
@@ -45,5 +42,4 @@ public class AlgorithmProvider {
 		}
 		return nearestCityOnly();
 	}
-
 }

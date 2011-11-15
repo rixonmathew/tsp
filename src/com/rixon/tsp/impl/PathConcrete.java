@@ -64,7 +64,6 @@ public class PathConcrete implements Path {
 			builder.append(city.getName());
 		}
 		builder.append(":"+pathLength);
- 
 		return builder.toString();
 	}
 }

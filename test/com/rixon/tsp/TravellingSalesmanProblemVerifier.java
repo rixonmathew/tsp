@@ -43,7 +43,7 @@ public class TravellingSalesmanProblemVerifier {
 	@Test
 	public void validateSolutionForAllPermutations()
 	{
-		int cityCount = 10;
+		int cityCount = 8;
 		List<City> cityList = getMockListOfCities(cityCount);
 		assertNotNull(cityList);
 		TravellingSalesmanProblem problem = createTravellingSalesmanProblem(cityList);
@@ -60,7 +60,6 @@ public class TravellingSalesmanProblemVerifier {
 		solution = problem.solve();
 		System.out.println(solution.getShortestPath());
 	}
-
 
 	
 	private void validatePathCount(TravellingSalesmanSolution solution,int cityCount) {

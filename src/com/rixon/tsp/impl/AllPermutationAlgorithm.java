@@ -11,7 +11,6 @@ import com.rixon.tsp.TravellingSalesmanSolution;
 
 public class AllPermutationAlgorithm implements Algorithm {
 
-	//TODO create Abstract Algorithm for common operations
 	TravellingSalesmanProblem problem;
 	City startCity;
 	City endCity;
@@ -50,12 +49,6 @@ public class AllPermutationAlgorithm implements Algorithm {
 		TravellingSalesmanSolution solution = new TSSConcrete();
 		findStartAndEndCities();
 		
-		/**
-		 * 1) Exclude start and end city
-		 * 2) Create pool of all combination of cities ( non repetivie)
-		 * 3) Create path for each combination		 * 
-		 * 4) Add to solution
-		 */
 		List<City> cityList = getCityListForTravel();
 		List<int[]> allPermutations = AlgorithmUtils.getPermutations(cityList.size());
 		for (int[] indices:allPermutations) {
@@ -74,12 +67,8 @@ public class AllPermutationAlgorithm implements Algorithm {
 
 	private List<City> getCityListForTravel() {
 		List<City> cityList = new ArrayList<City>(problem.getCityList());
-		//remove start and end
 		cityList.remove(startCity);
 		cityList.remove(endCity);
 		return cityList;
 	}
-
-
-
 }

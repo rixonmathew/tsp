@@ -46,6 +46,4 @@ public class TSPBasic implements TravellingSalesmanProblem {
 	public String toString() {
 		return "TSPBasic [cities=" + cities + "]";
 	}
-
-	
 }

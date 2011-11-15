@@ -161,7 +161,6 @@ public class MainView extends JFrame {
 			}
 			
 			graphics.drawString("("+x2+","+y2+")", x2, y2);			
-			//TODO how to show the path length;
 			String pathLength = city1.getDistance(city2).getValue();
 			int xd = (x1+x2)/2;
 			int yd = (y1+y2)/2;

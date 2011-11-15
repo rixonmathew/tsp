@@ -17,7 +17,6 @@ public class NearestCityOnlyAlgorithm implements Algorithm {
 
 	@Override
 	public String getAlgorithmName() {
-		// TODO Auto-generated method stub
 		return "Nearest City Only";
 	}
 
@@ -91,7 +90,4 @@ public class NearestCityOnlyAlgorithm implements Algorithm {
 		path.addCity(endCity);
 		return path;
 	}
-
-
-
 }
